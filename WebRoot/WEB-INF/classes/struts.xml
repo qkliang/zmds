@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC   
+     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"   
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+     
+     
+<struts>
+    <package name="liu" extends="struts-default" namespace="/">
+        <global-results>
+            <result name="succeed">/common/succeed.jsp</result>
+            <result name="msg">/common/msg.jsp</result>
+        </global-results>
+        
+        <action name="upload" class="com.util.upload" method="upload">
+             <result name="success">/upload/upload_re.jsp</result>
+        </action>
+        <action name="uploadPic" class="com.util.uploadPic" method="uploadPic">
+             <result name="success">/uploadPic/upload_re.jsp</result>
+        </action>
+        <action name="uploadDoc" class="com.util.uploadDoc" method="uploadDoc">
+             <result name="success">/uploadDoc/upload_re.jsp</result>
+        </action>
+        
+        <action name="index" class="indexAction" method="index">
+            <result name="success">/qiantai/index.jsp</result>
+        </action>
+        
+        
+        
+        
+        
+        
+        <action name="userReg" class="userAction" method="userReg">
+        </action>
+        <action name="userMana" class="userAction" method="userMana">
+             <result name="success">/admin/user/userMana.jsp</result>
+        </action>
+        <action name="userDel" class="userAction" method="userDel">
+        </action>
+        <action name="userXinxi" class="userAction" method="userXinxi">
+             <result name="success">/admin/user/userXinxi.jsp</result>
+        </action>
+        <action name="userEditMe" class="userAction" method="userEditMe">
+        </action>
+        
+        
+        
+       
+        
+        
+        
+        <action name="xinwenAdd" class="xinwenAction" method="xinwenAdd">
+        </action>
+        <action name="xinwenMana" class="xinwenAction" method="xinwenMana">
+             <result name="success">/admin/xinwen/xinwenMana.jsp</result>
+        </action>
+        <action name="xinwenDel" class="xinwenAction" method="xinwenDel">
+        </action>
+        <action name="xinwenAll" class="xinwenAction" method="xinwenAll">
+             <result name="success">/qiantai/xinwen/xinwenAll.jsp</result>
+        </action>
+        <action name="xinwenDetailQian" class="xinwenAction" method="xinwenDetailQian">
+             <result name="success">/qiantai/xinwen/xinwenDetailQian.jsp</result>
+        </action>
+        
+        
+        <action name="tupianAdd" class="tupianAction" method="tupianAdd">
+        </action>
+        <action name="tupianMana" class="tupianAction" method="tupianMana">
+            <result>/admin/tupian/tupianMana.jsp</result>
+        </action>
+        <action name="tupianDel" class="tupianAction" method="tupianDel">
+        </action>
+        
+        
+        
+        
+        
+        
+        <action name="orgDingAdd" class="orgAction" method="orgDingAdd">
+        </action>
+        <action name="orgXiaAdd" class="orgAction" method="orgXiaAdd">
+        </action>
+        <action name="orgMana" class="orgAction" method="orgMana">
+            <result name="success">/admin/org/orgMana.jsp</result>
+        </action>
+        <action name="orgDel" class="orgAction" method="orgDel">
+        </action>
+        <action name="orgAll" class="orgAction" method="orgAll">
+            <result name="success">/admin/org/orgAll.jsp</result>
+        </action>
+        <action name="orgSuoyou" class="orgAction" method="orgSuoyou">
+            <result name="success">/admin/org/orgSuoyou.jsp</result>
+        </action>
+        
+        
+        
+        <action name="bookAdd" class="bookAction" method="bookAdd">
+        </action>
+        <action name="bookMana" class="bookAction" method="bookMana">
+             <result name="success">/admin/book/bookMana.jsp</result>
+        </action>
+        <action name="bookDel" class="bookAction" method="bookDel">
+        </action>
+        <action name="bookByOrg" class="bookAction" method="bookByOrg">
+             <result name="success">/qiantai/book/bookByOrg.jsp</result>
+        </action>
+        <action name="bookDetailQian" class="bookAction" method="bookDetailQian">
+             <result name="success">/qiantai/book/bookDetailQian.jsp</result>
+        </action>
+        <action name="bookRes" class="bookAction" method="bookRes">
+             <result name="success">/qiantai/book/bookRes.jsp</result>
+        </action>
+        <action name="bookDianjilv" class="bookAction" method="bookDianjilv">
+             <result name="success">/qiantai/book/bookDianjilv.jsp</result>
+        </action>
+        
+        
+        
+        
+        <action name="zhangjieAdd" class="zhangjieAction" method="zhangjieAdd">
+        </action>
+        <action name="zhangjieMana" class="zhangjieAction" method="zhangjieMana">
+             <result name="success">/admin/zhangjie/zhangjieMana.jsp</result>
+        </action>
+        <action name="zhangjieDel" class="zhangjieAction" method="zhangjieDel">
+        </action>
+        <action name="zhangjieAll" class="zhangjieAction" method="zhangjieAll">
+             <result name="success">/qiantai/zhangjie/zhangjieAll.jsp</result>
+        </action>
+        <action name="zhangjieDetailQian" class="zhangjieAction" method="zhangjieDetailQian">
+             <result name="success">/qiantai/zhangjie/zhangjieDetailQian.jsp</result>
+        </action>
+        
+        
+        
+        <action name="pinglunAdd" class="pinglunAction" method="pinglunAdd">
+        </action>
+        <action name="pinglunAll" class="pinglunAction" method="pinglunAll">
+            <result name="success">/qiantai/pinglun/pinglunAll.jsp</result>
+        </action>
+        <action name="pinglunMana" class="pinglunAction" method="pinglunMana">
+            <result name="success">/admin/pinglun/pinglunMana.jsp</result>
+        </action>
+        <action name="pinglunDel" class="pinglunAction" method="pinglunDel">
+        </action>
+        
+        
+        
+        <action name="shoucangAdd" class="shoucangAction" method="shoucangAdd">
+        </action>
+        <action name="shoucangMine" class="shoucangAction" method="shoucangMine">
+            <result>/qiantai/shoucang/shoucangMine.jsp</result>
+        </action>
+        <action name="shoucangDel" class="shoucangAction" method="shoucangDel">
+        </action>
+        
+    </package>
+</struts>
